@@ -1,23 +1,7 @@
-<style>
-  :host {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-      Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-      "Segoe UI Symbol";
-    font-size: 14px;
-    color: #333;
-    box-sizing: border-box;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-
-  @media screen and (max-width: 575px) {
-    svg#rocket-smoke {
-      display: none;
-      visibility: hidden;
-    }
-  }
-</style>
-
-<div></div>
+<style></style>
+<div>
+  <h1 *ngFor="let pokemon of poke.results">{{ pokemon.name }}</h1>
+</div>
+<app-pokedex-list></app-pokedex-list>
 
 <router-outlet></router-outlet>
