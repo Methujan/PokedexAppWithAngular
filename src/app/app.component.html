@@ -1,6 +1,9 @@
 <style></style>
-<div>
-  <h1 *ngFor="let pokemon of poke.results">{{ pokemon.name }}</h1>
+<div *ngFor="let pokemon of poke.results">
+  <h1>{{ pokemon.name }}</h1>
+  <h1>{{ pokemon.sprites }}</h1>
+  <h1>{{ pokemon.abilites }}</h1>
+  <img src="{{ pokemon.sprites }}" alt="" />
 </div>
 <app-pokedex-list></app-pokedex-list>
 
