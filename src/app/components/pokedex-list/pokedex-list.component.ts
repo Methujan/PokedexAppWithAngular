@@ -13,7 +13,7 @@ export class PokedexListComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  getAllPokemonData(url:string){
+  getData(url:string){
     return this.http.get(url)
     // fetch('https://pokeapi.co/api/v2/pokemon/')
     //     .then((res) => res.json())

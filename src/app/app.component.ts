@@ -9,17 +9,28 @@ import { PokedexListComponent } from './components/pokedex-list/pokedex-list.com
 },
 )
 export class AppComponent implements OnInit {
+  pokemons : any[] = [];
   poke: any;
   url= 'https://pokeapi.co/api/v2/pokemon/'
   constructor(private srv: PokedexListComponent){}
   getPoke():void{
-    this.srv.getAllPokemonData(this.url).subscribe(data=>{
+    this.srv.getData(this.url).subscribe((data:any)=>{
       this.poke=data
-      console.log(this.poke)
+      data.results.forEach((pokemon:any) => {
+        // console.log(pokemon)
+        this.getEachPoke(pokemon)
+      });
+      console.log('this.poke', this.poke)
+      console.log('this.poke.results', this.poke.results)
+      console.log('pokemons', this.pokemons)
     })
   }
   getEachPoke(pokemon:any):void{
     let url = pokemon.url
+    this.srv.getData(url).subscribe((pokemonData:any)=>{
+      // console.log(pokemonData)
+      this.pokemons.push(pokemonData)
+    })
   }
   ngOnInit(): void {
     console.log(this.getPoke())
