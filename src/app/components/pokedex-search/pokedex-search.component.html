@@ -1,5 +1,6 @@
 <h2>Enter a Pokemon here</h2>
 <input [(ngModel)]="name" type="text" placeholder="Search" />
+<button (click)="getPokemonWithName()">Set value</button>
 <div *ngIf="dialog">
   <app-pokedex-card></app-pokedex-card>
 </div>

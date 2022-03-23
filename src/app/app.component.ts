@@ -17,23 +17,18 @@ export class AppComponent implements OnInit {
     this.srv.getData(this.url).subscribe((data:any)=>{
       this.poke=data
       data.results.forEach((pokemon:any) => {
-        // console.log(pokemon)
+
         this.getEachPoke(pokemon)
       });
-      console.log('this.poke', this.poke)
-      console.log('this.poke.results', this.poke.results)
-      console.log('pokemons', this.pokemons)
     })
   }
   getEachPoke(pokemon:any):void{
     let url = pokemon.url
     this.srv.getData(url).subscribe((pokemonData:any)=>{
-      // console.log(pokemonData)
       this.pokemons.push(pokemonData)
     })
   }
   ngOnInit(): void {
-    console.log(this.getPoke())
       this.getPoke()
   }
 }

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {HttpClient} from '@angular/common/http';
+
 
 @Component({
   selector: 'app-pokedex-search',
@@ -7,15 +9,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PokedexSearchComponent implements OnInit {
 
-  constructor() { }
+  constructor(private http:HttpClient) { }
 
   dialog = false
-  name: any;
+  name: string = "";
+  url=`https://pokeapi.co/api/v2/pokemon/${this.name}`
 
   getPokemonWithName(){
-
+    this.getData(this.url).subscribe((data:any)=>{
+      console.log('tyoooy',data.results)
+      console.log(this.url)
+      
+      this.dialog = true;
+    })
   }
+  
   ngOnInit(): void {
   }
 
-}
+getData(url:string){
+    return this.http.get(url)
+
+}}
