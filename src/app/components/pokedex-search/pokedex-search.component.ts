@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {HttpClient} from '@angular/common/http';
+import {HttpClient, HttpParams} from '@angular/common/http';
 
 
 @Component({
@@ -12,13 +12,14 @@ export class PokedexSearchComponent implements OnInit {
   constructor(private http:HttpClient) { }
 
   dialog = false
-  name: string = "";
+  name: string = "mew";
   url=`https://pokeapi.co/api/v2/pokemon/${this.name}`
 
   getPokemonWithName(){
     this.getData(this.url).subscribe((data:any)=>{
-      console.log('tyoooy',data.results)
+      console.log('tyoooy',data)
       console.log(this.url)
+      console.log(this.name)
       
       this.dialog = true;
     })
@@ -28,6 +29,7 @@ export class PokedexSearchComponent implements OnInit {
   }
 
 getData(url:string){
+  console.log(url)
     return this.http.get(url)
 
 }}
