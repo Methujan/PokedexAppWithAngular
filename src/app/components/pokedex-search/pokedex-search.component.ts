@@ -9,6 +9,12 @@ export class PokedexSearchComponent implements OnInit {
 
   constructor() { }
 
+  dialog = false
+  name: any;
+
+  getPokemonWithName(){
+
+  }
   ngOnInit(): void {
   }
 

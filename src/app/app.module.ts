@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { PokedexListComponent } from './components/pokedex-list/pokedex-list.component';
 import { PokedexSearchComponent } from './components/pokedex-search/pokedex-search.component';
 import { PokedexCardComponent } from './pokedex-card/pokedex-card.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { PokedexCardComponent } from './pokedex-card/pokedex-card.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

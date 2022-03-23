@@ -15,12 +15,5 @@ export class PokedexListComponent implements OnInit {
 
   getData(url:string){
     return this.http.get(url)
-    // fetch('https://pokeapi.co/api/v2/pokemon/')
-    //     .then((res) => res.json())
-    //     .then((data) => {
-    //       data.results.forEach((pokemon:object) => {
-    //       console.log(pokemon)
-    //       });
-    //     });
 
 }}
