@@ -1,0 +1,9 @@
+.search {
+  display: flex;
+  justify-content: center;
+}
+
+.searchText {
+  display: flex;
+  justify-content: center;
+}

@@ -1,7 +1,9 @@
-<h2>Enter a Pokemon here</h2>
-<input [(ngModel)]="name" type="text" placeholder="Search" />
-{{ name }}
-<button (click)="getPokemonWithName()">Search</button>
-<div *ngIf="dialog">
-  <app-pokedex-card [card]="pokemonData"></app-pokedex-card>
+<h2 class="searchText">Enter a Pokemon here</h2>
+<div class="search">
+  <input [(ngModel)]="name" type="text" placeholder="Search" />
+  {{ name }}
+  <button (click)="getPokemonWithName()">Search</button>
+  <div *ngIf="dialog">
+    <app-pokedex-card [card]="pokemonData"></app-pokedex-card>
+  </div>
 </div>
