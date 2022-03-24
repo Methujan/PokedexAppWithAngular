@@ -3,5 +3,5 @@
 {{ name }}
 <button (click)="getPokemonWithName()">Search</button>
 <div *ngIf="dialog">
-  <app-pokedex-card></app-pokedex-card>
+  <app-pokedex-card [card]="pokemonData"></app-pokedex-card>
 </div>
