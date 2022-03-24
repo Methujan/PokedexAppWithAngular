@@ -22,8 +22,8 @@ export class PokedexSearchComponent implements OnInit {
       console.log('tyoooy',data)
       console.log(url)
       console.log(this.name)
-      this.pokemonData = data
       this.dialog = true;
+      this.pokemonData = data
     })
   }
   
