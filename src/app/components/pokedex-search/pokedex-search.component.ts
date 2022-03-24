@@ -13,7 +13,7 @@ export class PokedexSearchComponent implements OnInit {
 
   dialog = false
   name: string = "";
-  pokemonData: object={};
+  pokemonData:any={};
  
 
   getPokemonWithName(){

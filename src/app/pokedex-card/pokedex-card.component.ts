@@ -6,7 +6,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./pokedex-card.component.css']
 })
 export class PokedexCardComponent implements OnInit {
-  @Input() card= {};
+  @Input() card:any;
   constructor() { }
 
   ngOnInit(): void {
