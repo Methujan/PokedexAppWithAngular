@@ -12,13 +12,14 @@ export class PokedexSearchComponent implements OnInit {
   constructor(private http:HttpClient) { }
 
   dialog = false
-  name: string = "mew";
-  url=`https://pokeapi.co/api/v2/pokemon/${this.name}`
+  name: string = "";
+ 
 
   getPokemonWithName(){
-    this.getData(this.url).subscribe((data:any)=>{
+    let url=`https://pokeapi.co/api/v2/pokemon/${this.name}`
+    this.getData(url).subscribe((data:any)=>{
       console.log('tyoooy',data)
-      console.log(this.url)
+      console.log(url)
       console.log(this.name)
       
       this.dialog = true;
