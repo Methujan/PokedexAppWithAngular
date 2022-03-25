@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {HttpClient, HttpParams} from '@angular/common/http';
+import {HttpClient} from '@angular/common/http';
 
 
 @Component({
@@ -30,8 +30,13 @@ export class PokedexSearchComponent implements OnInit {
   ngOnInit(): void {
   }
 
-getData(url:string){
-  console.log(url)
+  getData(url:string){
+    console.log(url)
     return this.http.get(url)
 
-}}
+
+  }
+  closeDetails(val:boolean){
+    this.dialog = val;
+  }
+}

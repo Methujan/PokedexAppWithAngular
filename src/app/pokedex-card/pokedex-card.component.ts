@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-pokedex-card',
@@ -7,9 +7,13 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class PokedexCardComponent implements OnInit {
   @Input() card:any;
+  @Output() close = new EventEmitter<boolean>();
+
+  closeDetails() {
+    this.close.emit(false)
+  }
   constructor() { }
 
   ngOnInit(): void {
   }
-
 }
