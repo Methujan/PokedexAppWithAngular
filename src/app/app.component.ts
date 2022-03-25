@@ -20,6 +20,7 @@ export class AppComponent implements OnInit {
 
         this.getEachPoke(pokemon)
       });
+      console.log(this.pokemons)
     })
   }
   getEachPoke(pokemon:any):void{
