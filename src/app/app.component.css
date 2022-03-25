@@ -1,8 +1,10 @@
-* {
-  background-color: khaki;
-}
 .pokemon-list {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  background-color: khaki;
+}
+.title-logo {
+  display: flex;
+  justify-content: center;
 }
