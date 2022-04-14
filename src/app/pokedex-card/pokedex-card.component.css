@@ -13,6 +13,7 @@
   background: rgba(10, 7, 0, 0.562);
 }
 .pokedex {
+  padding: 20px;
   background-color: rgb(186, 18, 52);
 }
 .detailView {
@@ -24,7 +25,9 @@
   position: relative;
   max-width: fit-content;
   border-radius: 40px;
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2), 0 10px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 -5px 15px -5px #333;
+  background-color: rgb(128, 179, 128);
+  /* box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2), 0 10px 10px rgba(0, 0, 0, 0.2); */
   color: white;
 }
 .pokemonName {
