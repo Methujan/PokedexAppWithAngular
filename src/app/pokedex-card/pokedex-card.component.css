@@ -27,3 +27,8 @@
   background-color: rgb(186, 18, 52);
   color: white;
 }
+
+.pokemonImage {
+  background-color: white;
+  border-radius: 40%;
+}

@@ -1,6 +1,6 @@
 <div class="detail">
   <div class="detailView">
-    <img [src]="card.sprites.front_default" alt="" />
+    <img class="pokemonImage" [src]="card.sprites.front_default" alt="" />
     <div>
       {{ card.name }}
       <div class="pokemonStats" *ngFor="let stat of card.stats">
