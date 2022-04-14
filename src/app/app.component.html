@@ -20,6 +20,19 @@
     <div class="pokemon-ability">
       <h2>{{ pokemon.abilities[0].ability.name }}</h2>
     </div>
+
+    <div class="pokemon-stats" *ngFor="let stat of pokemon.stats">
+      <div>
+        <h3>
+          {{ stat.stat.name }}
+        </h3>
+      </div>
+      <div>
+        <h3>
+          {{ stat.base_stat }}
+        </h3>
+      </div>
+    </div>
   </div>
 </div>
 <app-pokedex-list></app-pokedex-list>

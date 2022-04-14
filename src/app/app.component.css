@@ -33,3 +33,10 @@
   text-align: center;
   border: solid;
 }
+.pokemon-stats {
+  display: table-cell;
+  text-align: center;
+  border: solid;
+  height: 100%;
+  padding: 2vw;
+}
