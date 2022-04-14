@@ -5,11 +5,23 @@
       <div class="pokemonName">
         {{ card.name }}
       </div>
-      <div class="pokemonStats" *ngFor="let stat of card.stats">
-        {{ stat.stat.name }}
-        {{ stat.base_stat }}
+      <div class="statTable">
+        <div class="pokemonStats" *ngFor="let stat of card.stats">
+          <div class="pokemonStatName">
+            {{ stat.stat.name }}
+          </div>
+          <div class="pokemonStat">
+            {{ stat.base_stat }}
+          </div>
+        </div>
       </div>
     </div>
     <button (click)="closeDetails()">Close</button>
+    <button
+      type="button"
+      class="btn-close"
+      aria-label="Close"
+      (click)="closeDetails()"
+    ></button>
   </div>
 </div>

@@ -36,3 +36,16 @@
   background-color: white;
   border-radius: 40%;
 }
+.statTable {
+  display: table;
+  width: 250px;
+}
+.pokemonStats {
+  display: table-row;
+}
+.pokemonStatName {
+  display: table-cell;
+}
+.pokemonStat {
+  display: table-cell;
+}
