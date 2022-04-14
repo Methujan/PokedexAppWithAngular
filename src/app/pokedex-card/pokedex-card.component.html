@@ -1,19 +1,24 @@
 <div class="detail">
   <div class="pokedex">
     <button class="blueCircle" (click)="closeDetails()"></button>
-    <div class="detailView">
-      <img class="pokemonImage" [src]="card.sprites.front_default" alt="" />
-      <div>
-        <div class="pokemonName">
-          {{ card.name }}
-        </div>
-        <div class="statTable">
-          <div class="pokemonStats" *ngFor="let stat of card.stats">
-            <div class="pokemonStatName">
-              {{ stat.stat.name }}
-            </div>
-            <div class="pokemonStat">
-              {{ stat.base_stat }}
+    <div class="redCircle"></div>
+    <div class="yellowCircle"></div>
+    <div class="greenCircle"></div>
+    <div class="screenBorder">
+      <div class="detailView">
+        <img class="pokemonImage" [src]="card.sprites.front_default" alt="" />
+        <div>
+          <div class="pokemonName">
+            {{ card.name }}
+          </div>
+          <div class="statTable">
+            <div class="pokemonStats" *ngFor="let stat of card.stats">
+              <div class="pokemonStatName">
+                {{ stat.stat.name }}
+              </div>
+              <div class="pokemonStat">
+                {{ stat.base_stat }}
+              </div>
             </div>
           </div>
         </div>

@@ -16,6 +16,7 @@
   padding: 20px;
   background-color: rgb(186, 18, 52);
   border-bottom-left-radius: 50px;
+  border: solid black;
 }
 .detailView {
   display: flex;
@@ -26,11 +27,17 @@
   position: relative;
   max-width: fit-content;
   border-radius: 40px;
-  box-shadow: 0 -5px 15px -5px #333;
+  border: solid black;
+  /* box-shadow: 0 -5px 15px -5px #333; */
   background-color: rgb(128, 179, 128);
   /* box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2), 0 10px 10px rgba(0, 0, 0, 0.2); */
   color: white;
-  border: #333;
+}
+.screenBorder {
+  padding: 30px;
+  background-color: rgb(169, 169, 169);
+  border-bottom-left-radius: 50px;
+  border: solid black;
 }
 .pokemonName {
   display: flex;
@@ -58,8 +65,46 @@
 .blueCircle {
   height: 50px;
   width: 50px;
+  margin-bottom: 10px;
   background-color: rgb(100, 149, 237);
   border-radius: 50%;
+  border: solid rgb(211, 211, 211);
+
+  display: inline-block;
+}
+.redCircle {
+  position: relative;
+  top: -25px;
+  left: 150px;
+  height: 25px;
+  width: 25px;
+  background-color: rgb(220, 20, 60);
+  margin-left: 50px;
+  border-radius: 50%;
+  border: solid rgb(211, 211, 211);
+  display: inline-block;
+}
+.yellowCircle {
+  position: relative;
+  top: -25px;
+  left: 150px;
+  height: 25px;
+  width: 25px;
+  background-color: rgb(255, 255, 0);
+  border-radius: 50%;
+  margin-left: 5px;
+  border: solid rgb(211, 211, 211);
+  display: inline-block;
+}
+.greenCircle {
+  position: relative;
+  top: -25px;
+  left: 150px;
+  height: 25px;
+  width: 25px;
+  background-color: rgb(115, 230, 0);
+  border-radius: 50%;
+  margin-left: 5px;
   border: solid rgb(211, 211, 211);
   display: inline-block;
 }
