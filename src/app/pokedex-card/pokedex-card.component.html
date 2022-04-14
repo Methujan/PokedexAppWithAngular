@@ -1,23 +1,26 @@
 <div class="detail">
-  <button
-    type="button"
-    class="btn-close"
-    aria-label="Close"
-    (click)="closeDetails()"
-  ></button>
-  <div class="detailView">
-    <img class="pokemonImage" [src]="card.sprites.front_default" alt="" />
-    <div>
-      <div class="pokemonName">
-        {{ card.name }}
-      </div>
-      <div class="statTable">
-        <div class="pokemonStats" *ngFor="let stat of card.stats">
-          <div class="pokemonStatName">
-            {{ stat.stat.name }}
-          </div>
-          <div class="pokemonStat">
-            {{ stat.base_stat }}
+  <div class="pokedex">
+    <button
+      type="button"
+      class="btn-close"
+      aria-label="Close"
+      (click)="closeDetails()"
+    ></button>
+    <div class="blueCircle"></div>
+    <div class="detailView">
+      <img class="pokemonImage" [src]="card.sprites.front_default" alt="" />
+      <div>
+        <div class="pokemonName">
+          {{ card.name }}
+        </div>
+        <div class="statTable">
+          <div class="pokemonStats" *ngFor="let stat of card.stats">
+            <div class="pokemonStatName">
+              {{ stat.stat.name }}
+            </div>
+            <div class="pokemonStat">
+              {{ stat.base_stat }}
+            </div>
           </div>
         </div>
       </div>
