@@ -27,7 +27,11 @@
   background-color: rgb(186, 18, 52);
   color: white;
 }
-
+.pokemonName {
+  display: flex;
+  justify-content: center;
+  padding: 2vh;
+}
 .pokemonImage {
   background-color: white;
   border-radius: 40%;
