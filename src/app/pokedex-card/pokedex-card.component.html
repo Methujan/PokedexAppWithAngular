@@ -1,4 +1,10 @@
 <div class="detail">
+  <button
+    type="button"
+    class="btn-close"
+    aria-label="Close"
+    (click)="closeDetails()"
+  ></button>
   <div class="detailView">
     <img class="pokemonImage" [src]="card.sprites.front_default" alt="" />
     <div>
@@ -17,11 +23,5 @@
       </div>
     </div>
     <button (click)="closeDetails()">Close</button>
-    <button
-      type="button"
-      class="btn-close"
-      aria-label="Close"
-      (click)="closeDetails()"
-    ></button>
   </div>
 </div>
