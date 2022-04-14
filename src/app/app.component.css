@@ -1,10 +1,35 @@
-.pokemon-list {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+.pokemon-table {
+  display: table;
   background-color: khaki;
+  width: 100%;
+}
+.pokemon-list {
+  display: table-row;
+  width: 100%;
 }
 .title-logo {
   display: flex;
   justify-content: center;
+}
+.pokemon-name {
+  display: table-cell;
+  text-align: center;
+  border: solid;
+}
+.pokemon-ability {
+  display: table-cell;
+  text-align: center;
+  border: solid;
+}
+.pokemon-image {
+  display: table-cell;
+  border-radius: 5px;
+  border: solid;
+  text-align: center;
+  background-color: blanchedalmond;
+}
+.pokemon-type {
+  display: table-cell;
+  text-align: center;
+  border: solid;
 }

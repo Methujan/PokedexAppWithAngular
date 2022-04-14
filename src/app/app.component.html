@@ -2,10 +2,25 @@
   <img src="../assets/pngwing.com.png" alt="" />
 </div>
 <app-pokedex-search></app-pokedex-search>
-<div class="pokemon-list" *ngFor="let pokemon of pokemons">
-  <img src="{{ pokemon.sprites.front_default }}" alt="{{ pokemon.name }}" />
-  <h1>{{ pokemon.name }}</h1>
-  <h2>{{ pokemon.abilities[0].ability.name }}</h2>
+<div class="pokemon-table">
+  <div class="pokemon-list" *ngFor="let pokemon of pokemons">
+    <div class="pokemon-image">
+      <img src="{{ pokemon.sprites.front_default }}" alt="{{ pokemon.name }}" />
+    </div>
+    <div class="pokemon-name">
+      <h1>{{ pokemon.name }}</h1>
+    </div>
+
+    <div class="pokemon-type">
+      <h2>
+        {{ pokemon.types[0].type.name }}
+      </h2>
+    </div>
+
+    <div class="pokemon-ability">
+      <h2>{{ pokemon.abilities[0].ability.name }}</h2>
+    </div>
+  </div>
 </div>
 <app-pokedex-list></app-pokedex-list>
 

@@ -42,7 +42,7 @@
 .pokemonName {
   display: flex;
   justify-content: center;
-  padding: 2vh;
+  padding: 0.5vh;
 }
 .pokemonImage {
   background-color: white;
@@ -60,6 +60,11 @@
 }
 .pokemonStat {
   display: table-cell;
+}
+.pokemonType {
+  display: flex;
+  justify-content: center;
+  padding: 0.5vh;
 }
 
 .blueCircle {

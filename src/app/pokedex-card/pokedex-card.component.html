@@ -11,6 +11,12 @@
           <div class="pokemonName">
             {{ card.name }}
           </div>
+          <div class="pokemonType">
+            <p>Types:</p>
+            <div *ngFor="let type of card.types">
+              <p>{{ type.type.name }}</p>
+            </div>
+          </div>
           <div class="statTable">
             <div class="pokemonStats" *ngFor="let stat of card.stats">
               <div class="pokemonStatName">
