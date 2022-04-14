@@ -4,6 +4,7 @@
     <div>
       {{ card.name }}
       <div class="pokemonStats" *ngFor="let stat of card.stats">
+        {{ stat.stat.name }}
         {{ stat.base_stat }}
       </div>
     </div>
