@@ -1,12 +1,6 @@
 <div class="detail">
   <div class="pokedex">
-    <button
-      type="button"
-      class="btn-close"
-      aria-label="Close"
-      (click)="closeDetails()"
-    ></button>
-    <div class="blueCircle"></div>
+    <button class="blueCircle" (click)="closeDetails()"></button>
     <div class="detailView">
       <img class="pokemonImage" [src]="card.sprites.front_default" alt="" />
       <div>
