@@ -1,7 +1,12 @@
 <div class="detail">
   <div class="detailView">
     <img [src]="card.sprites.front_default" alt="" />
-    {{ card.name }}
+    <div>
+      {{ card.name }}
+      <div class="pokemonStats" *ngFor="let stat of card.stats">
+        {{ stat.base_stat }}
+      </div>
+    </div>
     <button (click)="closeDetails()">Close</button>
   </div>
 </div>
