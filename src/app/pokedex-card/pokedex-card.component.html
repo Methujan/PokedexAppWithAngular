@@ -9,21 +9,27 @@
         <img class="pokemonImage" [src]="card.sprites.front_default" alt="" />
         <div>
           <div class="pokemonName">
-            {{ card.name }}
+            <h3>
+              {{ card.name }}
+            </h3>
           </div>
           <div class="pokemonType">
-            <p>Type:</p>
+            <h3>Type:</h3>
             <div *ngFor="let type of card.types">
-              <p>{{ type.type.name }}</p>
+              <h3>{{ type.type.name }}</h3>
             </div>
           </div>
           <div class="statTable">
             <div class="pokemonStats" *ngFor="let stat of card.stats">
               <div class="pokemonStatName">
-                {{ stat.stat.name }}
+                <h5>
+                  {{ stat.stat.name }}
+                </h5>
               </div>
               <div class="pokemonStat">
-                {{ stat.base_stat }}
+                <h5>
+                  {{ stat.base_stat }}
+                </h5>
               </div>
             </div>
           </div>
