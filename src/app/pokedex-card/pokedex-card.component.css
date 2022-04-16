@@ -45,8 +45,9 @@
   padding: 0.5vh;
 }
 .pokemonImage {
-  background-color: rgb(150, 190, 130);
+  background-color: rgb(100, 100, 100);
   border-radius: 40%;
+  border: solid black;
 }
 .statTable {
   display: table;
