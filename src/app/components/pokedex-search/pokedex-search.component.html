@@ -1,7 +1,12 @@
 <h2 class="searchText">Enter a Pokemon here</h2>
 <div class="search">
   <input [(ngModel)]="name" type="text" placeholder="Search" data-cy="search" />
-  <button (click)="getPokemonWithName()" type="button" class="btn btn-primary">
+  <button
+    (click)="getPokemonWithName()"
+    type="button"
+    class="btn btn-primary"
+    data-cy="search-btn"
+  >
     <i class="icon-search"></i>
   </button>
   <div *ngIf="dialog">

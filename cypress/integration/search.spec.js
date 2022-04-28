@@ -8,6 +8,7 @@
 describe("PokeAPI Tests", () => {
   it("search for Mew", () => {
     cy.visit("http://localhost:4200/");
-    cy.get('[data-cy="search"]');
+    cy.get('[data-cy="search"]').type("mew");
+    cy.get('[data-cy="search-btn"]').click();
   });
 });
