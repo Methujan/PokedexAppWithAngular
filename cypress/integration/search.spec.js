@@ -10,5 +10,6 @@ describe("PokeAPI Tests", () => {
     cy.visit("http://localhost:4200/");
     cy.get('[data-cy="search"]').type("mew");
     cy.get('[data-cy="search-btn"]').click();
+    cy.get(".pokemonName").contains("mew");
   });
 });
