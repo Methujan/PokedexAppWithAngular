@@ -11,5 +11,6 @@ describe("PokeAPI Tests", () => {
     cy.get('[data-cy="search"]').type("mew");
     cy.get('[data-cy="search-btn"]').click();
     cy.get(".pokemonName").contains("mew");
+    cy.get(".pokemonType").contains("psychic");
   });
 });
