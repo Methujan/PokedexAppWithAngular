@@ -19,6 +19,8 @@ describe("PokeAPI Tests", () => {
     cy.get('[data-cy="search-btn"]').click();
     cy.get(".pokemonName").contains("mew");
     cy.get(".pokemonType").contains("psychic");
+    cy.get("app-pokedex-card").should("be.visible");
     cy.get(".blueCircle").click();
+    cy.get("app-pokedex-card").should("not.exist");
   });
 });
