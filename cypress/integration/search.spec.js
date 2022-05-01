@@ -13,4 +13,12 @@ describe("PokeAPI Tests", () => {
     cy.get(".pokemonName").contains("mew");
     cy.get(".pokemonType").contains("psychic");
   });
+  it("check if close button works", () => {
+    cy.visit("http://localhost:4200/");
+    cy.get('[data-cy="search"]').type("mew");
+    cy.get('[data-cy="search-btn"]').click();
+    cy.get(".pokemonName").contains("mew");
+    cy.get(".pokemonType").contains("psychic");
+    cy.get(".blueCircle").click();
+  });
 });
